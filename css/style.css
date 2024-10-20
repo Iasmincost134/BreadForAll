@@ -302,3 +302,89 @@ footer {
     padding: 1.5rem;
     font-weight: 100;
 }
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
+@media screen and (max-width: 426px) {
+    header {
+        padding: 10px 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.inicial-site, section.doacao-site {
+        padding: 70px 7%;
+    }
+
+    .yellow-line {
+        display: none;
+    }
+
+    header nav ul {
+        gap: 2px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        padding: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .inicial-site .txt-inicial-site h1, 
+    .doacao-site .geral-doacao-site h1 {
+        font-size: 28px;
+    }
+
+    .inicial-site .txt-inicial-site p {
+        font-size: 0.9rem;
+    }
+
+    .botoes-categoria {
+        margin: 0 10px;
+    }
+
+    section.doacao-site .geral-doacao-site {
+        margin-top: -20px;
+    }
+
+    section.doacao-site .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botao-categoria {
+        padding: 10px;
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .btn-voluntariar button {
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+
+    .logo img {
+        width: 70px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+    
