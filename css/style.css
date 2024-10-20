@@ -1,0 +1,304 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ /* configurações gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.container{
+    display: flex;
+}
+
+.btn-voluntariar button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #000000;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+ .btn-voluntariar button:hover {
+    background-color: #333;
+}
+
+/* cabeçalho */
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.4rem;
+}
+
+/* inicial site */
+.sonhos {
+    color: #4B0AC9; 
+}
+.Historia {
+    color: #04E762; 
+}
+
+section.inicial-site, section.doacao-site{
+ padding: 40px 4%;
+}
+
+section.inicial-site .container{
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+ }
+       
+ section#inicio .container {
+    text-align: center;
+}
+.logo img{
+    width: 90px;
+}
+
+.inicial-site .txt-inicial-site h1, .doacao-site .geral-doacao-site h1 {
+    font-size: 42px;
+    color: #000;
+}
+
+
+.inicial-site .txt-inicial-site p{
+    font-size: 1.2rem;
+    margin: 30px 0;
+    color: #555;
+}
+.inicial-site .txt-inicial-site #subtitulo{
+    margin: 30px 50px 30px 0;
+    line-height: 28px;
+}
+
+/* linhas */
+.purple-line {
+    width: 10px; 
+    height: 230px; 
+    background-color: #6A00FF; 
+    margin-right: 20px; 
+}
+.green-line {
+    width: 22px; 
+    height: 280px; 
+    background-color: #04E762; 
+    margin-right: 20px; 
+}
+.yellow-line {
+    width: 4px;
+    height: 40px; 
+    background-color: #FDCB58;
+    margin-left: 10px; 
+    margin-top: -410px;
+}
+/* seção doacao-site */
+
+.botoes-categoria {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 0 210px;
+}
+ section.doacao-site .container{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.botao-categoria {
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    width: 300px;
+    transition: background-color 0.3s ease;
+}
+
+.alimentos-nao-pereciveis {
+    background-color: #D80073;
+}
+
+.alimentos-infantis {
+    background-color: #4A90E2;
+}
+
+.bebidas {
+    background-color: #F5A623;
+}
+
+.alimentos-frescos {
+    background-color: #7ED321;
+}
+
+.botao-categoria:hover {
+    opacity: 0.8;
+}
+
+.btn-vermais {
+    margin-top: 30px;
+}
+
+#centro{
+    text-align:center;
+}
+
+/* rodape */
+footer {
+    width: 100%;
+    color: #f5f5f5;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_content {
+    background-color: #171717;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+} 
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: #f5f5f5;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;    
+}
+
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: #a8a29e;
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+    color: #7f37c9;
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p {
+    color: #a8a29e;
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: #0e0c0c;
+    border-radius: 4px;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button {
+    background-color: #008BF8;
+    border: none;
+    color: #f5f5f5;
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover {
+    opacity: 0.8;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color:  #0e0c0c;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
